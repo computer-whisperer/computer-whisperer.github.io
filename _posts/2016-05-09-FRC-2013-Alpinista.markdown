@@ -15,3 +15,8 @@ The basic autonomous routine I built utilized twin ultrasonic sensors and an arm
 I also helped significantly in designing and building the electrical system.
 
 By the end of the season, my team as a whole had achieved the highest seed of a rookie team in the state and won the Rookie All-star award at a district competition.
+
+Software source links:
+
+ - [LabVIEW Robot Source]('https://github.com/Team4819/FRC-2013-LabView-Robot-Project')
+ - [LabVIEW Dashboard Source]('https://github.com/Team4819/FRC-2013-LabView-Dashboard-Project')
