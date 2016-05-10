@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "Our 2013 FRC Robot: Alpinista"
+categories: FRC 2013 Alpinista
+---
+
+In 2013 I was contacted by a friend about a local opportunity to join what would soon become a Rookie FIRST Robotics Team. I was a freshman at the time, and had accumulated many small experiences with software development (little games, websites, and small LEGO Mindstorms) since age 8. With this background I quickly became the primary, and in future years the only software developer for the team.
+
+![Alpinista at our Troy district competition](/assets/alpinista-troy.jpg)
+
+In a nutshell, Alpinista was designed to climb the pyramid of Ultimate Ascent simply and reliably. Throughout this season I focused my time building both the sofware and electrical system.
+
+On the software side, I spent most of the season learning the ins and outs of LabVIEW, a language I had no previous experience with. By the end of the season, our robot was capable of functioning in both teleoperated mode and autonomous mode. 
+The basic autonomous routine I built utilized twin ultrasonic sensors and an arm encoder to back up and drop three or four frisbees into a goal. Although I knew very little at the time about proper motion control, I designed and implemented a crude constant-acceleration control loop to help give a consistent approach to the goal.
+I also helped significantly in designing and building the electrical system.
+
+By the end of the season, my team as a whole had achieved the highest seed of a rookie team in the state and won the Rookie All-star award at a district competition.

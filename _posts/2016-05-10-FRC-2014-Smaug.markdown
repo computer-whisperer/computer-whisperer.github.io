@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "Our 2014 FRC Robot: Smaug"
+categories: FRC 2014 Smaug
+---
+
+Coming from our all-star rookie year, I spent the summer leading up to the 2014 season teaching myself more about both this arcane drawing software known as "LabVIEW" and the math behind basic PID control loops.
+
+![Smaug at our Kettering district competition](/assets/smaug-kettering.jpg)
+
+After our simplistic robot from our rookie year, team 4819 was ready to try something harder. Smaug is designed to expertly collect, pass, and shoot the exercise balls featured in Aerial Assist.
+
+From this year forward, I was effectively the only active programmer on the team. Still, our control system improves dramatically from year to year. For its drive base, Smaug featured full encoder feedback from the wheels, as well as a valuable analog gyroscope.
+In autonomous mode, these sensors were employed to drive straight down the field to precise locations and shoot up to two balls into the goal. This was accomplished by both a simple proportional loop with the gyroscope and a modified PID loop for forward motion. Knowing 
+In addition, I used an IP camera and basic color filtering to detect retroreflective targets signaling "hot" goals in autonomous mode, and waited for this signal to maximize our points scored.
+
+Smaug swept the competition at one of our local district events, winning both a blue banner and a trip to the state championship. Excellent performance here led us to qualify for the renowned World Championship in St. Louis, Missouri, where we finished our season ranked 22nd in our division.
