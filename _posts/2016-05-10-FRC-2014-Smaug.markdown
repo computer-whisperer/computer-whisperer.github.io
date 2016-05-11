@@ -6,7 +6,7 @@ categories: FRC 2014 Smaug
 
 Coming from our all-star rookie year, I spent the summer leading up to the 2014 season teaching myself more about both this arcane drawing software known as "LabVIEW" and the math behind basic PID control loops.
 
-![Smaug at our Kettering district competition](/assets/smaug-kettering.jpg)
+![Smaug at the Kettering district competition](/assets/smaug-kettering.jpg)
 
 After our simplistic robot from our rookie year, team 4819 was ready to try something harder. Smaug is designed to expertly collect, pass, and shoot the exercise balls featured in Aerial Assist.
 

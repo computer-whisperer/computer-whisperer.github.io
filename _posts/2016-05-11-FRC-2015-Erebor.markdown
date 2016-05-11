@@ -4,6 +4,13 @@ title:  "Our 2015 FRC Robot: Erebor"
 categories: FRC 2015 Erebor
 ---
 
-In the following season, the game demanded an autonomous mode that was capable of much more than driving in a straight line, and I was ready for this. I built a system capable of driving the robot through any number of coordinates on the field using trapezoidal motion profiles. Due to my inexperience with control theory, I made a number of mistakes that caused many headaches. But I was learning. Driven by a passion to keep improving, I took a college Calculus class, enabling me to better understand how true optimal control algorithms work.
+Every control system we build has monumental room for improvement, and each summer I strive to learn better ways to do things.
+In the process of designing Smaug, I started to experience the difficulties involved in true autonomous navigation. Taking a simple motorised system and making it do a specific task involved far more than a simple "goto(x, y)" command.
+Recognizing after last year that a simple PID loop didn't seem to quite accomplish the task, I spent the summer learning about superior methods, such as trapezoidal and s-curve motion profiles.
+
+![Erebor at the Waterford district competition](/assets/erebor-waterford.jpg)
+
+Erebor features the first fully holonomic drivetrain my team has built. Using mecanum wheels, we can perform any combination of rotation and translation simultaneously.
+This feature was crucial to creating a full-field navigation system within my capabilities. I used trapezoidal motion profiles to drive the robot through precise x, y, and theta coordinates to complete the autonomous routines.
 
 TODO: Add more

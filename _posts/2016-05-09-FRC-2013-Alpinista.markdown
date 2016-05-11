@@ -6,7 +6,7 @@ categories: FRC 2013 Alpinista
 
 In 2013 I was contacted by a friend about a local opportunity to join what would soon become a Rookie FIRST Robotics Team. I was a freshman at the time, and had accumulated many small experiences with software development (little games, websites, and small LEGO Mindstorms) since age 8. With this background I quickly became the primary, and in future years the only software developer for the team.
 
-![Alpinista at our Troy district competition](/assets/alpinista-troy.jpg)
+![Alpinista at the Troy district competition](/assets/alpinista-troy.jpg)
 
 In a nutshell, Alpinista was designed to climb the pyramid of Ultimate Ascent simply and reliably. Throughout this season I focused my time building both the sofware and electrical system.
 
