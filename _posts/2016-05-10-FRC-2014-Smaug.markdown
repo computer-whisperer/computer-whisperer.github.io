@@ -18,5 +18,5 @@ Smaug swept the competition at one of our local district events, winning both a 
 
 Software source links:
 
- - [LabVIEW Robot Source]('https://github.com/Team4819/2014-Robot-Code')
- - [LabVIEW Dashboard Source]('https://github.com/Team4819/2014-Dashboard-Code')
+ - [LabVIEW Robot Source](https://github.com/Team4819/2014-Robot-Code)
+ - [LabVIEW Dashboard Source](https://github.com/Team4819/2014-Dashboard-Code)

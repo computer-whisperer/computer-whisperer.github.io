@@ -22,6 +22,7 @@ url: "http://computer-whisperer.github.io" # the base hostname & protocol for yo
 paginate: 5
 twitter_username: christianbalcom
 github_username:  computer-whisperer
+#excerpt_separator: <!--more-->
 
 # Build settings
 markdown: kramdown

@@ -1,0 +1,53 @@
+---
+layout: post
+title:  "Our 2016 FRC Robot: Smeagol"
+categories: FRC 2016 Smeagol
+---
+
+Driven by my experience last year, I spent the summer and fall of 2015 learning more about higher-level methods for robotic motion control. 
+I dual enrolled in a nearby community college to learn Calculus I, Calculus II, and Physics I -- helping me to understand the collegiate-level 
+whitepapers that describe the algorithms I needed. This was when I first discovered the field of Optimal Control -- using a full simulation of 
+your robot combined to find the robot controller necessary to optimize a given cost function. The possibilities of such a system astounded me, 
+and I started work on Integrated Dynamics, a project which has enough content to be given a completely separate page.
+
+INSERT PICTURE OF ROBOT
+
+Smeagol is my final robot on Team 4819, and is arguably the most professional. I had many plans for this robot, from neural network image 
+processing using a Microsoft Kinect v2 to fully autonomous navigation and scoring using Integrated Dynamics. Unfortunately, due to my 
+extensive work prototyping ball launchers, my lack of higher level education, and lack of time, I was unable to achieve these goals entirely. 
+Despite this, it is still an impressive robot.
+
+Due to the demands of the game, Smeagol required an unusually large drivetrain system and an unusually small overall footprint, requiring a very 
+compact electrical system. My previous experience served me well, and I was able to fit the full FRC control system, pneumatics, and additional 
+hardware necessary for running the Kinect in a very compact area. In addition, the most important components were built into what we called 
+"The compute stack" containing the robot's main controller, Jetson TK1 co-processor, wireless access point, and power regulation hardware for these components. 
+This entire unit is connected to the rest of the robot via two stacks of anderson connectors, and may be easily removed and tested outside of the robot.
+
+INSERT PICTURE OF ELECTRICAL SYSTEM
+
+INSERT PICTURE OF STACK
+
+One of the difficulties with running fully autonomous in this game is keeping track of where you are on the field. Part of the game is "breaching" several "defences", 
+which usually involve bouncing over obstacles in "dukes of hazard" style. This is a nightmare if you are using encoders to track your field position. My solution to 
+this was to use a Microsoft Kinect sensor and neural network to recognize various waypoints on the field, and to calculate the displacement from them. Neural networks
+require lots of training data that is an accurate representation of your target. As a team with meager means, our best analog to the polished polycarbonate field pieces
+were made of wood, and photographically very different from the real ones. Were we to use a simple RGB camera to train a neural network, we would likely be unable to 
+make it work on the real field once we got to competitions.
+
+The solution to this problem was to use a Depth Camera, which was impartial to a target's coloring, but sensitive to geometry. The depth channel on the Kinect would see 
+no difference between the real field and our wooden analogs. On the robot, we planned to use a Jetson TK1 to drive the Kinect and perform the necessary analysis. 
+Unfortunately, due to problems discovered in the libfreenect driver library, we were unable to complete this setup in time for competitions.
+
+INSERT PICTURE OF ROBOT WITH KINECT
+
+As mentioned above, I learned about true Optimal Control the previous summer, and was eager for the chance to implement it. I had started work on my Integrated Dynamics 
+library the previous fall, and still had a lot of work to complete. I will write a separate page on the specifics of this. Sadly, this project has since turned out to be 
+one worthy of a six month build period, and not a six week period. I was unable to bring Integrated Dynamics to a working state in time to demonstrate it at competitions.
+
+To-date, I am still working on Integrated Dynamics. After the crunch of competition season, I decided to take the time and rebuild nearly the entire library, learning from 
+the mistakes I made during competition season, making it work properly in three dimensions, and making it applicable to more than simple FRC robots.
+
+Software source links:
+
+ - [Smeagol's Python Codebase](https://github.com/Team4819/2016-Codebase)
+

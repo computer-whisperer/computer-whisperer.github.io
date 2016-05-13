@@ -11,18 +11,22 @@ Recognizing after last year that a simple PID loop didn't seem to quite accompli
 ![Erebor at the Waterford district competition](/assets/erebor-waterford.jpg)
 
 Erebor features the first fully holonomic drivetrain my team has built. Using mecanum wheels, we can perform any combination of rotation and translation simultaneously.
-This feature was crucial to creating a full-field navigation system within my capabilities.
+This feature was crucial to creating a full-field navigation system within my capabilities. This was also my first year with using Python to program our robot, enabling 
+accelerated development without needing to compile the software between iterations. My modular framework, Yeti (ADD LINK!!!), also provided critical redundancy in certain 
+software components.
 
-More specifically, I designed a finite position integrator using the sensors I had available, and used this to keep track of the pose of the robot during its autonomous mode. With this estimation, I used three live trapezoidal motion profiles 
-to directly drive each component of the robot's velocity to reach given setpoints desired. Each of the four drive motors also featured its own velocity feedback loop, enabling the robot to drive at any velocity asked.
+More specifically, I designed a finite position integrator using the sensors I had available, and used this to keep track of the pose of the robot during its autonomous mode. With this estimation, I used three trapezoidal motion profile 
+generators to directly drive each component of the robot's velocity. Each of the four drive motors also featured its own velocity feedback loop, enabling the robot to fulfill any velocity target requested.
  
 When I designed this system, I had yet to learn basic calculus, and made several mistakes that surfaced mid-competition and caused the robot to perform sluggishly.
 The biggest of these was related to the cascading controller structure, having the trapezoidal motion profile generators feed directly into the setpoint of the wheel PID loops. 
-For example, when the robot was commanded to accelerate forward, the profile generator would reference the current speed of the wheel when calculating the next target speed based
-on the desired acceleration rate. What I had failed to take into account was the delay incurred by the additional feedback loops, which could not achieve the desired speed before 
-the profile generator reached its next iteration. When the generator calculated the next target velocity, it based its calculation on the current wheel velocity, not what it should be.
-Therefore the robot would never accelerate or decelerate consistently, overshooting or undershooting its target. This problem was compounded by flaws in my simulation environment, where 
-I simply used the desired velocity as the actual velocity, and failed to properly simulate the delay caused by the additional feedback loop.
+When the robot was commanded to accelerate forward, the profile generator would use the current speed of the wheel plus an acceleration term to calculate the next target speed. 
+What I had failed to take into account was the delay incurred by the additional feedback loops, which could not achieve the desired speed before the profile generator reached its next iteration.
+When the generator calculated the next target velocity, it based its calculation on the current wheel velocity rather than the previous target. Therefore the robot would never accelerate or decelerate 
+consistently, overshooting or undershooting its target. This problem was difficult to find due to flaws in my simulation environment, where I simply used the desired velocity as the actual 
+velocity, and failed to properly simulate the delay caused by the additional feedback loop.
+
+Once I realized this, I was able to apply a small patch to the algorithm, which seemed to solve the majority of the problem. In future years, however, I would seek a superior solution.
 
 On the electrical subteam, I helped design our best wiring harness yet -- including a full set of drive wheel encoders and gyro. We were also particularly careful in our wire routing, resulting in cour neatest electrical system so far.
 We additionally used a Raspberry PI and camera to stream h.264 video to our driver station so that our drive team could see what our robot was doing in first person.
@@ -31,4 +35,4 @@ I was the team's primary robot driver throughout our two district competitions, 
 
 Software source links:
 
- - [Robot, Dashboard, and RPI server Source]('https://github.com/Team4819/2015-Python-Codebase')
+ - [Eribor's Python Codebase](https://github.com/Team4819/2015-Python-Codebase)
