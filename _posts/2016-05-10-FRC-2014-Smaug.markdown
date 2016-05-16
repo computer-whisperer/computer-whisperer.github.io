@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Our 2014 FRC Robot: Smaug"
-categories: FRC 2014 Smaug
+tags: FRC 2014 Smaug LabVIEW
 ---
 
 Coming from our all-star rookie year, I spent the summer leading up to the 2014 season teaching myself more about LabVIEW and the math behind basic PID control loops.

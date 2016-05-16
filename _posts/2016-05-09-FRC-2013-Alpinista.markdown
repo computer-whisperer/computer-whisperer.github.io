@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Our 2013 FRC Robot: Alpinista"
-categories: FRC 2013 Alpinista
+tags: FRC 2013 Alpinista LabVIEW
 ---
 
 In 2013 I was contacted by a friend about a local opportunity to join what would soon become a Rookie FIRST Robotics Team. I was a freshman at the time, and had accumulated many small experiences with software development (little games, websites, and LEGO robots) since age 8. With this background I quickly became the primary, and in future years the only software developer for the team.

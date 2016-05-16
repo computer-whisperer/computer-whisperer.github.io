@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Our 2015 FRC Robot: Erebor"
-categories: FRC 2015 Erebor
+tags: FRC 2015 Erebor Python
 ---
 
 Every control system we build has monumental room for improvement, and each summer I strive to learn better ways to do things.

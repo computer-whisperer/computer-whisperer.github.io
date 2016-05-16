@@ -1,19 +1,19 @@
 ---
 layout: post
 title:  "Our 2016 FRC Robot: Smeagol"
-categories: FRC 2016 Smeagol
+tags: FRC 2016 Smeagol Python
 ---
 
 Driven by my experience last year, I spent the summer and fall of 2015 learning more about higher-level methods for robotic motion control. 
-I dual enrolled in a nearby community college to learn Calculus I, Calculus II, and Physics I -- helping me to understand the collegiate-level 
+I dual-enrolled in a nearby community college to learn Calculus I, Calculus II, and Physics I -- helping me to understand the collegiate-level 
 whitepapers that describe the algorithms I needed. This was when I first discovered the field of Optimal Control -- using a full simulation of 
 your robot combined to find the robot controller necessary to optimize a given cost function. The possibilities of such a system astounded me, 
 and I started work on Integrated Dynamics, a project which has enough content to be given a completely separate page.
 
-INSERT PICTURE OF ROBOT
+![Smeagol at the Kentwood district competition](/assets/smeagol-kentwood.jpg)
 
-Smeagol is my final robot on Team 4819, and is arguably the most professional. I had many plans for this robot, from neural network image 
-processing using a Microsoft Kinect v2 to fully autonomous navigation and scoring using Integrated Dynamics. Unfortunately, due to my 
+Smeagol is my final robot on Team 4819, and is arguably the most professional. I had many plans for this robot, from neural-network convolutional 
+image processing using a Microsoft Kinect v2 to fully-autonomous navigation and scoring using Integrated Dynamics. Unfortunately, due to my 
 extensive work prototyping ball launchers, my lack of higher level education, and lack of time, I was unable to achieve these goals entirely. 
 Despite this, it is still an impressive robot.
 
