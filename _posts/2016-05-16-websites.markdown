@@ -1,0 +1,34 @@
+---
+layout: post
+title:  "My experience in web development."
+---
+
+Over my high-school career, I have built a total of four distinct websites.
+
+
+# Team 4819 V1
+
+![Team 4819](/assets/team4819-appengine.png)
+The first substantial website I built, [team4819.com](team4819.com), was a site for my FRC team. The original version featured a custom-built dynamic loading system, 
+only downloading the specific components necessary to display each new page. It also featured custom user logon, blog posting, and media upload systems. For a time, it 
+also functioned as the team's e-mail blaster, forwarding team updates to any e-mail accounts in the users system.
+
+
+# Michael Engineering V1
+![Michael Engineering](/assets/michaelengineering-html.png)
+Michael Engineering is the primary sponsor for my robotics team. After the owners saw the website I built for the team, they offered me an internship. One of my projects 
+there was to update their website, and this is what I came up with. [michaelengineering.com](michaelengineering.com)
+
+
+# Team 4819 V2
+![Team 4819](/assets/team4819-wordpress.png)
+A few years after I built the first website for team 4819, it needed a redo. I took this opportunity to build it on top of Wordpress so that members of the team could 
+continue maintaining it when I move on in life. Since I built the first one in 2013, I had learned many things about visually-pleasing web design, and incorporated these
+into the final product. It will replace the existing [team4819.com](team4819.com) in the next few weeks.
+
+
+# Michael Engineering V2
+Ever since I first got involved at Michael Engineering, I had believed that their website could use a complete redesign. After years of band-aids, I finally took the 
+opportunity to re-build the site on Drupal 8. With this base, the company can continue adding content when I move on in life. It will replace the existing 
+[michaelengineering.com](michaelengineering.com) in the next few months.
+
