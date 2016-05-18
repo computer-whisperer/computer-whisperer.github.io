@@ -23,9 +23,9 @@ hardware necessary for running the Kinect in a very compact area. In addition, t
 "The compute stack" containing the robot's main controller, Jetson TK1 co-processor, wireless access point, and power regulation hardware for these components. 
 This entire unit is connected to the rest of the robot via two stacks of anderson connectors, and may be easily removed and tested outside of the robot.
 
-INSERT PICTURE OF ELECTRICAL SYSTEM
+![Smeagol's electrical system](/assets/smeagol-electrical.jpg)
 
-INSERT PICTURE OF STACK
+![Smeagol's computer stack](/assets/smeagol-stack.jpg)
 
 One of the difficulties with running fully autonomous in this game is keeping track of where you are on the field. Part of the game is "breaching" several "defences", 
 which usually involve bouncing over obstacles in "dukes of hazard" style. This is a nightmare if you are using encoders to track your field position. My solution to 
@@ -37,8 +37,6 @@ make it work on the real field once we got to competitions.
 The solution to this problem was to use a Depth Camera, which was impartial to a target's coloring, but sensitive to geometry. The depth channel on the Kinect would see 
 no difference between the real field and our wooden analogs. On the robot, we planned to use a Jetson TK1 to drive the Kinect and perform the necessary analysis. 
 Unfortunately, due to problems discovered in the libfreenect driver library, we were unable to complete this setup in time for competitions.
-
-INSERT PICTURE OF ROBOT WITH KINECT
 
 As mentioned above, I learned about true Optimal Control the previous summer, and was eager for the chance to implement it. I had started work on my Integrated Dynamics 
 library the previous fall, and still had a lot of work to complete. I will write a separate page on the specifics of this. Sadly, this project has since turned out to be 

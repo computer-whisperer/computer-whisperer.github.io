@@ -5,7 +5,7 @@ tags: FRC 2015 Erebor Python
 ---
 
 Every control system we build has monumental room for improvement, and each summer I strive to learn better ways to do things.
-In the process of designing our 2014 robot, Smaug, (ADD LINK!!!) I started to experience the difficulties involved in true autonomous navigation. Taking a simple motorized system and making it do a specific task involved far more than a simple "goto(x, y)" command.
+In the process of designing our 2014 robot, Smaug, I started to experience the difficulties involved in true autonomous navigation. Taking a simple motorized system and making it do a specific task involved far more than a simple "goto(x, y)" command.
 Recognizing after last year that a simple PID loop didn't seem to quite accomplish the task, I spent the summer learning about superior methods, such as trapezoidal and s-curve motion profiles.
 
 ![Erebor at the Waterford district competition](/assets/erebor-waterford.jpg)
